@@ -37,4 +37,9 @@ class MessagesController < ApplicationController
     @messages ||= current_user.messages
   end
   helper_method :messages
+  
+  def receivers
+    @receivers ||= User.all
+  end
+  helper_method :receivers
 end
