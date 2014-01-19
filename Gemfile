@@ -14,7 +14,9 @@ gem 'devise'
 
 group :test do
   gem 'rspec-rails'
-  
+  gem 'capybara-webkit'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
 end
 group :doc do
   gem 'sdoc', require: false
